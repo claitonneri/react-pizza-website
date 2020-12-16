@@ -3,13 +3,13 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import { GlobalStyle } from './styles/global';
 
-import NavBar from './components/NavBar';
+import Hero from './components/Hero';
 
 const App: React.FC = () => {
   return (
     <Router>
       <GlobalStyle />
-      <NavBar />
+      <Hero />
     </Router>
   );
 };

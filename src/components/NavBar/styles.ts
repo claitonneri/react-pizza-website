@@ -6,7 +6,7 @@ export const Container = styled.nav`
   display: flex;
   justify-content: center;
 
-  background: red;
+  background: transparent;
   height: 80px;
   font-weight: 700;
 `;
