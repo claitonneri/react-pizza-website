@@ -3,10 +3,10 @@ import React from 'react';
 import {
   Container,
   Icon,
-  Close,
+  CloseIcon,
   Menu,
   ButtonWrap,
-  Link,
+  Item,
   Route,
 } from './styles';
 
@@ -17,9 +17,9 @@ const SideBar: React.FC = () => {
         <CloseIcon />
       </Icon>
       <Menu>
-        <Link to="/">Pizzas</Link>
-        <Link to="/">Desserts</Link>
-        <Link to="/">Full Menu</Link>
+        <Item to="/">Pizzas</Item>
+        <Item to="/">Desserts</Item>
+        <Item to="/">Full Menu</Item>
       </Menu>
       <ButtonWrap>
         <Route to="/">Order Now</Route>
