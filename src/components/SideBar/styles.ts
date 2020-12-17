@@ -24,18 +24,18 @@ export const Container = styled.aside<SideBarProps>`
 `;
 
 export const Icon = styled(FaTimes)`
-  color: #000;
-`;
-
-export const CloseIcon = styled.div`
   position: absolute;
-  top: 1.2rem;
+  top: 1.5rem;
   right: 1.5rem;
   background: transparent;
   border: transparent;
-  font-size: 2rem;
+  font-size: 1.5rem;
   outline: none;
   cursor: pointer;
+`;
+
+export const CloseIcon = styled.div`
+  color: #000;
 `;
 
 export const Menu = styled.div`
@@ -44,7 +44,7 @@ export const Menu = styled.div`
   grid-template-rows: repeat(3, 80px);
   text-align: center;
 
-  @media screen and (max-width: 480pex) {
+  @media screen and (max-width: 480px) {
     grid-template-rows: repeat(3, 60px);
   }
 `;

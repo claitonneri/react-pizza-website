@@ -10,10 +10,18 @@ import {
   Route,
 } from './styles';
 
-const SideBar: React.FC = () => {
+interface SideBarProps {
+  isOpen: boolean;
+  isOpened: () => void;
+}
+
+const SideBar: React.FC<SideBarProps> = ({
+  isOpen,
+  isOpened,
+}: SideBarProps) => {
   return (
-    <Container isOpen={false}>
-      <Icon>
+    <Container isOpen={isOpen} onClick={isOpened}>
+      <Icon onClick={isOpened}>
         <CloseIcon />
       </Icon>
       <Menu>
