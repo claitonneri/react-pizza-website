@@ -12,7 +12,7 @@ import {
 
 const SideBar: React.FC = () => {
   return (
-    <Container>
+    <Container isOpen={false}>
       <Icon>
         <CloseIcon />
       </Icon>

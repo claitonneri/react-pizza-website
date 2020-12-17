@@ -2,7 +2,11 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { FaTimes } from 'react-icons/fa';
 
-export const Container = styled.aside`
+interface SideBarProps {
+  isOpen: boolean;
+}
+
+export const Container = styled.aside<SideBarProps>`
   position: fixed;
   z-index: 999;
   width: 350px;
