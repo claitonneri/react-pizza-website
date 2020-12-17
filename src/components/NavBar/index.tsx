@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { Container, NavLink, NavIcon, Bars } from './styles';
+import { Container, NavLink, NavIcon, Bars, Logo } from './styles';
+
+import ImgLogo from '../../assets/images/logo.png';
 
 interface NavBarProps {
   isOpened(): void;
@@ -9,7 +11,10 @@ interface NavBarProps {
 const NavBar: React.FC<NavBarProps> = ({ isOpened }: NavBarProps) => {
   return (
     <Container>
-      <NavLink to="/">Pizza</NavLink>
+      <NavLink to="/">
+        <Logo src={ImgLogo} alt="Logo" />
+        Pizza
+      </NavLink>
       <NavIcon onClick={isOpened}>
         <p>Menu</p>
         <Bars />

@@ -7,7 +7,7 @@ export const Container = styled.nav`
   justify-content: center;
 
   background: transparent;
-  height: 80px;
+  height: 160px;
   font-weight: 700;
 `;
 
@@ -25,6 +25,11 @@ export const NavLink = styled(Link)`
     top: 10px;
     left: 25px;
   } ;
+`;
+
+export const Logo = styled.img`
+  display: block;
+  width: 120px;
 `;
 
 export const NavIcon = styled.div`
