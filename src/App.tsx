@@ -7,6 +7,9 @@ import Hero from './components/Hero';
 import Products from './components/Products';
 
 import { products } from './helpers/products';
+import { sweets } from './helpers/sweets';
+
+import Feature from './components/Feature';
 
 const App: React.FC = () => {
   return (
@@ -14,6 +17,8 @@ const App: React.FC = () => {
       <GlobalStyle />
       <Hero />
       <Products heading="Choose your favorite" products={products} />
+      <Feature />
+      <Products heading="Sweet Treats for You" products={sweets} />
     </Router>
   );
 };
