@@ -33,15 +33,25 @@ export const SocialMediaWrap = styled.div`
 `;
 
 export const Logo = styled(Link)`
-  color: #fff;
-  justify-self: start;
-  text-decoration: none;
-  font-size: 1.5rem;
   display: flex;
   align-items: center;
-  margin-bottom: 16px;
-  font-weight: bold;
+  text-decoration: none;
   cursor: pointer;
+
+  img {
+    width: 60px;
+    margin-right: 10px;
+  }
+
+  h4 {
+    color: #fff;
+    justify-self: start;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  @media screen and (max-width: 820px) {
+    flex-direction: column;
+  } ;
 `;
 
 export const SocialIcons = styled.div`

@@ -17,13 +17,18 @@ import {
   SocialLink,
 } from './styles';
 
+import ImgLogo from '../../assets/images/logo.png';
+
 const Footer: React.FC = () => {
   return (
     <Container>
       <Wrapper>
         <SocialMedia>
           <SocialMediaWrap>
-            <Logo to="/">Pizza</Logo>
+            <Logo to="/">
+              <img src={ImgLogo} alt="Logo" />
+              <h4>Pizza</h4>
+            </Logo>
             <SocialIcons>
               <SocialLink
                 href="/"

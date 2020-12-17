@@ -29,7 +29,10 @@ export const NavLink = styled(Link)`
 
 export const Logo = styled.img`
   display: block;
-  width: 120px;
+  width: 110px;
+  margin-right: 10px;
+  -webkit-filter: drop-shadow(2px 2px 2px #222);
+  filter: drop-shadow(2px 2px 2px #222);
 `;
 
 export const NavIcon = styled.div`
